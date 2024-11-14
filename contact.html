@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Bryan's Café Logo" class="logo-image">
+                Bryan's Café
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        
+        <section>
+            <h2>Enquiry Form</h2>
+            <form id="enquiry-form">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Message Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message Body</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Branches</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Opening Hours</th>
+                    </tr>
+                </thead>
+                <tbody id="branch-list">
+                    <!-- Branch rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy;<script>document.write(new Date().getFullYear())</script> Bryan's Café</p>
+        <p><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Load contact.js to handle XML data and form submission -->
+    <script src="files/contact.js"></script>
+</body>
+</html>

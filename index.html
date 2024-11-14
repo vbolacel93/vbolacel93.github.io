@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Bryan's Café</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <script src="script.js"></script> <!-- Link to an external JavaScript file for dynamic year -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Bryan's Café Logo" class="logo-image"> <!-- Logo image added -->
+                Bryan's Café
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Banner -->
+        <section class="banner">
+            <img src="images/cafe-banner.jpg" alt="Bryan's Café Banner">
+            <h1>Welcome to Bryan's Café!</h1>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <img src="images/cafe-interior.jpg" alt="Interior of Bryan's Café" class="about-image">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Welcome to Bryan's Café, where we offer a cozy atmosphere and delicious meals made from the freshest ingredients. Come and enjoy a meal with us!</p>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history">
+            <div class="history-text">
+                <h2>Our History</h2>
+                <p>Founded in 2020, Bryan's Café has quickly become a favorite spot for locals. Our commitment to quality and community has been the cornerstone of our success.</p>
+            </div>
+            <img src="images/cafe-history.jpg" alt="History of Bryan's Café" class="history-image">
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Bryan's Café</p>
+        <p><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to display the current year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

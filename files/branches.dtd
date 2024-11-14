@@ -1,0 +1,7 @@
+<!-- branches.dtd -->
+<!ELEMENT branches (branch+)>
+<!ELEMENT branch (address, contact, openingHours, mapLink)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT openingHours (#PCDATA)>
+<!ELEMENT mapLink (#PCDATA)>
