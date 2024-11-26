@@ -253,3 +253,62 @@ tbody tr:nth-child(even) {
         margin: 0 auto;
     }
 }
+
+/* Lightbox container (hidden by default) */
+.lightbox {
+    display: none;             /* Hidden by default */
+    position: fixed;           /* Fixed position to cover entire screen */
+    z-index: 1000;             /* High z-index to be on top */
+    left: 0;
+    top: 0;
+    width: 100%;               /* Full width */
+    height: 100%;              /* Full height */
+    background-color: rgba(0, 0, 0, 0.8);  /* Black background with transparency */
+    overflow: auto;            /* Enable scrolling if image is larger than viewport */
+}
+
+/* Lightbox content (the image) */
+.lightbox-content {
+    display: block;
+    margin: 10% auto;          /* Centered vertically with top margin */
+    max-width: 80%;            /* Limit maximum width */
+    max-height: 80vh;          /* Limit maximum height (viewport height) */
+    border-radius: 10px;       /* Rounded corners for the image */
+}
+
+/* Caption below the image */
+.caption {
+    text-align: center;
+    color: #fff;               /* White text for contrast */
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Close button (top-right corner) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;               /* White close button */
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;          /* Smooth hover effect */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: #ff0000;            /* Red color on hover */
+}
+
+/* Ensure images are responsive */
+.clickable-img {
+    cursor: pointer;           /* Indicate clickable image */
+    transition: transform 0.2s;  /* Smooth zoom effect */
+}
+
+.clickable-img:hover {
+    transform: scale(1.05);    /* Slight zoom on hover */
+}
+
+

@@ -27,8 +27,14 @@
     </header>
 
     <main>
-        <h1>Menu</h1>
 
+        <h1>Menu</h1>
+        <!-- Lightbox Container (hidden by default) -->
+        <div id="lightbox" class="lightbox" style="display: none;">
+            <span class="close-btn" onclick="document.getElementById('lightbox').style.display='none'">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="caption" id="caption"></div>
+        </div>
         <!-- Meals Section -->
         <section class="meals">
             <h2>Meals</h2>
