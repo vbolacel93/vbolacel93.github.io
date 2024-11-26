@@ -271,8 +271,9 @@ tbody tr:nth-child(even) {
 .lightbox-content {
     display: block;
     margin: 10% auto;          /* Centered vertically with top margin */
-    max-width: 80%;            /* Limit maximum width */
-    max-height: 80vh;          /* Limit maximum height (viewport height) */
+    margin-top: 96px;
+    max-width: 75%;            /* Limit maximum width */
+    max-height: auto;          /* Limit maximum height (viewport height) */
     border-radius: 10px;       /* Rounded corners for the image */
 }
 
@@ -280,8 +281,8 @@ tbody tr:nth-child(even) {
 .caption {
     text-align: center;
     color: #fff;               /* White text for contrast */
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: auto;
+    font-size: 20px;
 }
 
 /* Close button (top-right corner) */
