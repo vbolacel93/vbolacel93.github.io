@@ -1,7 +1,12 @@
 <!-- menu.dtd -->
-<!ELEMENT menu (item+)>
-<!ELEMENT item (name, price, description, image?)>
+<!ELEMENT menu (item | beverage)*>
+<!ELEMENT item (name, price, description, image)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT image (#PCDATA)>
+
+<!ELEMENT beverage (name, description?, options)>
+<!ELEMENT options (option+)>
+<!ELEMENT option (name?, size?, price)>
+<!ELEMENT size (#PCDATA)>

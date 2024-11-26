@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* General container to prevent overflow */
+main, header, footer {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -199,7 +210,13 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    overflow-x: auto;
+}
+
+/* Ensuring images do not exceed their container */
+img {
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover;         /* Ensures the image fills the container while keeping proportions */
 }
 
 th, td {
